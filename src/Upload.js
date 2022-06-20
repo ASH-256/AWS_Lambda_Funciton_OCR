@@ -50,7 +50,7 @@ class Upload extends Component{
         folder:UID,
         img : btoa(this.state.files[0])
     };
-    await fetch('https://wt54sr2t7k.execute-api.us-east-1.amazonaws.com/Production',
+    await fetch('<Your Landing >',
     {
         method : "POST",
         headers :{
@@ -63,7 +63,7 @@ class Upload extends Component{
     );
 
     let targetImage = UID+".png";
-    const response = await fetch('https://wt54sr2t7k.execute-api.us-east-1.amazonaws.com/Production/ocr',
+    const response = await fetch(<YOUR FUNCTION>,
     {
         method : "POST",
         headers :{
