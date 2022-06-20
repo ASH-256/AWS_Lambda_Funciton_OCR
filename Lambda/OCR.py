@@ -7,7 +7,7 @@ def lambda_handler(event, context):
     bad_chars = [';', ':', '!', "*", ']', "[" ,'"', "{" , "}" , "'",","]
 
     
-    s3BucketName = "react-ar-webapp-images"
+    s3BucketName = "YOUR BUCKET NAME"
     documentName = filePath
     textract = boto3.client('textract')
     
