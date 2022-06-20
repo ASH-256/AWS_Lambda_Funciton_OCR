@@ -16,7 +16,7 @@ exports.handler = (event, context, callback) =>{
         Key: filePath,
         Body : buffer,
         ContentEncoding:'base64',
-        Bucket : "react-ar-webapp-images"
+        Bucket : "YOUR BUCKET NAME"
         
     };
     s3.upload(params, function(err, data){
